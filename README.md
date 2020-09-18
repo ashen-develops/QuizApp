@@ -1,2 +1,1 @@
-# QuizApp
-Worked in a pair with Josh Vaughan
+Pair: Joshua Vaughan and Ashen Pennington

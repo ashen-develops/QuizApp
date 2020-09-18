@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="app.css" rel="stylesheet" type="text/css">
+    <link href="smallscreen.css" rel="stylesheet" type="text/css">
+    <link href="widescreen.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @font-face { font-family: get_schwifty; src: url('get_schwifty.ttf'); } 
+        h1 {
+           font-family: get_schwifty
+        }
+      </style>
+</head>
+
+<body> 
+
+    <header>
+        <h1>Rick and Morty</h1>
+        <h2>Super Fan Quiz! OOOO WEEE!!!</h2>
+        
+    </header>
+    
+
+
+    <main>
+        <!-- WELCOME PAGE -->
+        
+            <img src="images/showme.gif" alt="SHOW ME WHAT YOU GOT!">
+            <h2>CLICK BELOW TO START!</h2>
+            <div>
+                <button class="button" id="start">Start Quiz</button> 
+            </div>
+        
+
+           
+        
+
+        <!-- QUESTION PAGE -->
+            
+            <h2>Question #</h2>
+            <p>Question Text</p>
+            <div>
+                <form>
+                    <input type="radio" name="a" id="ab">
+                    <label for=>Question A</label>
+                    <input type="radio" name="a" id="ab">
+                    <label for=>Question B</label>
+                    <input type="radio" name="a" id="ab">
+                    <label for=>Question C</label>
+                    <input type="radio" name="a" id="ab">
+                    <label for=>Question D</label>
+                </form>
+            </div>
+            <div>
+                <button class="button" id="submit-btn" type="submit">Submit</button>
+            </div>
+
+        <!-- *Wrong* Answer Template -->
+        <h2>Wrong answer, broh!</h2>
+        <img src="images/donthate.gif" alt="Don't hate the player, hate the game, son!">
+        <div class="score/questions">
+        <p>Ooh-la-la, your running score is (current score) out of (number of questions completed)!</p>
+        </div>
+        <div>
+        <p>You got *Uuurp* (number of unanswered questions) questions's left, don't be a Jerry.</p>
+        </div>
+        <div>
+            <button class="button" id="nextQ">Continue</button>
+        </div>
+
+        <!-- *Correct* Answer Template -->
+            <h2>Ahhh, yeaaahhhh. Get Schwifty!</h2>
+            <img src="images/schwifty.gif" alt="I'm Mr. Bulldops!">
+            <h3 id="totalScore"></h3>
+            <div>
+                <button class="button" id="nextQ">Continue</button>
+            </div>
+            
+
+
+
+        <!-- RESULTS PAGE TEMPLATE -->
+            <h2 id="totalScore">Total Score</h2>
+            <img src="images/finaldance.gif">
+            <div>
+                <button class="button" id="retryQuiz">Retry</button>
+            </div>
+
+
+       
+
+
+
+
+    </main>
+
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

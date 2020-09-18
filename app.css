@@ -1,0 +1,129 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+@font-face { font-family: get_schwifty; src: url('get_schwifty.ttf'); }
+ 
+.align-left{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 25% 40px 25%;
+  font-size: 15px;
+  font-family: Orbitron;
+}
+
+header h1{
+  font-family: get_schwifty;
+  font-size: 25px;
+  color: rgb(36, 149, 248);
+  text-shadow: 1px 4px 3px rgb(31, 185, 0), 0px 0px 8px rgb(31, 185, 0), -1px 0 2px rgb(187, 255, 0), 0 1px 2px rgb(112, 255, 17), 1px 0 2px rgb(94, 255, 89), 0 -1px 2px rgb(203, 255, 82);
+  letter-spacing: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-family: Creepster;
+  font-size: 19px;
+  color: rgb(36, 149, 248);
+  text-shadow: -15px 10px 5px blue, 15px -10px 5px rgb(195, 0, 255), -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  animation: animate
+    3s linear infinite;
+}
+body {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: rgb(0, 21, 36);
+  
+}
+
+main h2{
+  font-family: Creepster;
+  font-size: 25px;
+  color: rgb(36, 149, 248);
+}
+
+main button{
+  background-color: rgb(36, 149, 248) ;
+  box-shadow: 1px 0px 4px rgb(31, 185, 0), 0px 0px 2px rgb(31, 185, 0), -1px 0 6px rgb(187, 255, 0);
+  border-radius: 15px;
+  margin: 10px auto 10px auto;
+  font-family: Orbitron;
+  color: rgb(18, 28, 61);
+  font-weight: bold;
+}
+
+main p {
+  font-family: Orbitron;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 4px;
+}
+
+
+
+img, div, header {
+  max-width: 80%;
+  font-size: 50%;
+  margin: 10px auto 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 40px auto;
+  font-size: 15px;
+  font-family: Orbitron;
+}
+
+label, input {
+  display: flex;
+  margin: 10px 0 10px -60px;
+  line-height: 25px;
+
+  
+}
+input[type="radio"]{
+  margin-right: 20px;
+}
+
+
+
+
+@media all and (min-width: 462px){
+  header h1{
+    font-size: 40px;
+  }
+  
+  header h2 {
+    font-size: 30px;
+  }
+}
+@keyframes animate {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+  }
+}
