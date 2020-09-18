@@ -1,2 +1,2 @@
 # QuizApp
-Worked in a pair with 
+Worked in a pair with Josh Vaughan
